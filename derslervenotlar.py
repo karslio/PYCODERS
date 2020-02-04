@@ -95,3 +95,71 @@
 
 
 # print({i: chr(i) for i in range(65, 96)})
+
+
+# 20200201
+
+# def speak(animal='dog'):
+#     if animal == 'pig':
+#         return 'oink'
+#     elif animal == 'duck':
+#         return 'quack'
+#     elif animal == 'cat':
+#         return 'meuw'
+#     elif animal == 'dog':
+#         return 'woof'
+#     return '?'
+#
+#
+# print(speak())
+
+
+# Python program to illustrate
+# *args with first extra argument
+# def myFun(*a):
+#     total = 0
+#     for arg in a:
+#         total += arg
+#     return total
+#
+#
+# print(myFun(1, 2, 3, 4, 5, ))
+
+
+# def special_greeting(**kwargs):
+#     if 'colt' in kwargs and kwargs['colt'] == 'special':
+#         return 'you get a special greeting colt'
+#     elif 'colt' in kwargs:
+#         return f'{kwargs["colt"]} colt'
+#     return 'not sure who is'
+#
+#
+# print(special_greeting(colt='hello'))
+
+# def combine_words(word, **kwargs):
+#     if 'prefix' in kwargs:
+#         return kwargs['prefix'] + word
+#     elif 'suffix' in kwargs:
+#         return kwargs['suffix'] + word
+#     return word
+#
+#
+# print(combine_words('ali', prefix='veli', suffix='deli'))
+
+
+# def sumdigit(n):
+#     if n == 0:
+#         return 0
+#     return n % 10 + sumdigit(int(n / 10))
+#
+#
+# print(sumdigit(345))
+
+
+def ust(x, y):
+    if y == 0:
+        return x
+    return x * ust(x, y - 1)
+
+
+print(ust(3, 4))
