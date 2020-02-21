@@ -8,3 +8,6 @@ def equal_reverse():
 
 
 print(equal_reverse())
+
+# Ex: madam, tacocat, utrecht
+# Result: True, True, False

@@ -1,9 +1,7 @@
-def greatest_common_divisor():
-    y = int(input('enter first number:'))
-    x = int(input('enter second number:'))
+def greatest_common_divisor(x, y):
     while y != 0:
         (x, y) = (y, x % y)
     return x
 
 
-print(greatest_common_divisor())
+print(greatest_common_divisor(30, 45))

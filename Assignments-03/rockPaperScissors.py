@@ -1,3 +1,5 @@
+from time import *
+
 menu = ("""
                 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                 $$           Winning Rules as follows :               $$
@@ -12,9 +14,10 @@ menu = ("""
 """)
 import random
 
-print(menu)
-
+# print(menu)
+start_time = time()
 while True:
+    sleep(2)
     userChoice = input('please enter your choice').lower()
     computerChoice = random.choice(['rock', 'paper', 'scisior'])
     if userChoice == 'n':
@@ -40,7 +43,5 @@ while True:
     else:
         print('please enter valid value')
     print('do you want to play again')
-
-
-
-
+end_time = time()
+print('oyun suresi', end_time-start_time)
